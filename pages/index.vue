@@ -1,34 +1,24 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        meituan
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div class="page-index">
+  <el-row>
+    <el-col :span="5">
+      <emenu/>
+    </el-col>
+  </el-row>
+  <el-row :span="24">
+    3
+  </el-row>
   </div>
 </template>
 
+
 <script>
-export default {}
+import Emenu from '@/components/index/menu.vue'
+export default {
+  components:{
+    Emenu
+  }
+}
 </script>
 
 <style lang="scss">
