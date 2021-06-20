@@ -9,7 +9,8 @@ const json =require ('koa-json')
 const dbConfig =require ('./server/models/config')
 const router =require ('./server/interface/users')
 const passport =require ('./server/interface/utils/passport.js')
-
+const geo =require ('./server/interface/geo.js')
+const search=require('./server/interface/search.js')
 
 const app = new koa()
 const host = process.env.HOST || '127.0.0.1' 
@@ -58,6 +59,15 @@ async function start() {
 app
   .use(router.routes())
   .use(router.allowedMethods());
+
+app
+  .use(geo.routes())
+  .use(geo.allowedMethods());
+
+
+  app
+  .use(search.routes())
+  .use(search.allowedMethods());  
 
 app.use(ctx => {
   ctx.status = 200 // koa defaults to 404 when it sees that status is unset

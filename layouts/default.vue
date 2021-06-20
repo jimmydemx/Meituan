@@ -1,10 +1,10 @@
 <template>
   <el-container class="layout-default" >
-    <el-header height=160px>
+    <el-header height=197px>
       <my-header/>
     </el-header>
   
-    <el-main>
+    <el-main class="m">
       <nuxt/>
     </el-main>
     <el-footer>
@@ -23,3 +23,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.m{
+  margin:0 auto;
+}
+</style>
