@@ -1,7 +1,7 @@
 # Meituan 
 
 <font size="6" color="red">Note:</font>
-For a more detailed overview of this project, please [download](http://storage.live.com/items/AEAB165A07B2199B!6090:/Full Stack Project- Meituan.pdf?authkey=AObJPJqOP6HGXy0) the PDF.
+For a more detailed overview of this project, please [download](http://storage.live.com/items/AEAB165A07B2199B!6090:/FullStackProject_Meituan.pdf?authkey=AObJPJqOP6HGXy0) the PDF file.
 
 
 # 1. Introduction
