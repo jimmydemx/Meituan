@@ -1,7 +1,12 @@
 # Meituan 
 
+<font size="6" color="red">Note:</font>
+For a more detailed overview of this project, please [download](http://storage.live.com/items/AEAB165A07B2199B!6090:/Full Stack Project- Meituan.pdf?authkey=AObJPJqOP6HGXy0) the PDF.
+
+
 # 1. Introduction
 This project is intended to realize the functionality of the most popular takeout/coupon platform in china:[Meituan.com](https://sh.meituan.com/). 
+
 
 **Vue | ElementUI | Nuxt | Koa | Redis | Mongodb**
 As a full stack project, It has utilized `Vue.js` as the framework for frontend coding, `Axios` as the way to asynchronosly communicate with the server. For the layout, `SASS` is adopted, along with [Element UI](https://element.eleme.io/#/en-US),an efficient `Vue Component` for the fast layout of webpage.
@@ -21,10 +26,10 @@ The #TODO List of  functionality is shown as below:
 - [x] generation of Session and use session for the login and exit.
 
 **Search and Location**
-- [ ] Search bar data fetching in Mongodb
-- [ ] Recommendation bar 
-- [ ] Geograpic Serice check the location based on IP.
-- [ ] city/disctrict based Search
+- [x] Search bar data fetching in Mongodb
+- [x] Recommendation bar 
+- [x] Geograpic Serice check the location based on IP.
+- [x] city/disctrict based Search
 
 **Map**
 - [ ] embed the Map for reference of the direction of shops
@@ -53,6 +58,11 @@ $ npm run generate
 
 
 # 4. Notes
+
+As for the privacy of data of Meituan, the database is `not` uploaded to
+github, Please contact the author for the database only for the non-commercial purpose. 
+
+
 There are some pitfall that need to dodge,
 1, In order to use SASS, the compatibility shall be considered,since `node-sass@4.14.1` is only compatibale with `node@14.x`, node shall shift to/downgrade to `node@14.x`:
 

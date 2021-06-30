@@ -65,6 +65,9 @@ export default {
                     params:{
                         kind:this.kind,
                         city: this.$store.state.geo.position.city
+                    },
+                    headers:{
+                        "Access-Control-Allow-Origin": "http://localhost:3338"
                     }
                 })
                 if(status===200){

@@ -21,12 +21,12 @@ export default {
             user:''
         }
     },
-    // async mounted(){
-    //     const {status,data:{user}}=await this.$axios.get('http://localhost:3338/users/getUser')
-    //     if(status===200){
-    //         this.user=user
-    //     }
-    // }
+    async mounted(){
+        const {status,data:{user}}=await this.$axios.get('http://localhost:3338/users/getUser')
+        if(status===200){
+            this.user=user
+        }
+    }
 }
 </script>
 
